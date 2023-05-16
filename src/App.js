@@ -4,22 +4,13 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { ARITCLE_ROUTES } from "./Components/routeConstant";
 import SideBar from "./Components/Article/SideBar";
-import { Layout } from "antd";
-
-const { Header, Sider, Content } = Layout;
 
 function App() {
   return (
-    <Layout className="body">
+    <body className="flex flex-row">
       <BrowserRouter>
         <SideBar />
-        {/* <ToastContainer /> */}
-        <Content
-          style={{
-            padding: "30px 25px",
-            minHeight: 280,
-          }}
-        >
+        <section className="py-7 px-8 max-h-screen w-full overflow-hidden overflow-y-scroll">
           <Switch>
             <Route exact path="/">
               <Redirect to="/profile" />
@@ -33,9 +24,9 @@ function App() {
               />
             ))}
           </Switch>
-        </Content>
+        </section>
       </BrowserRouter>
-    </Layout>
+    </body>
   );
 }
 

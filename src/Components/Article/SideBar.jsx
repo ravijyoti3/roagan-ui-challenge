@@ -38,12 +38,7 @@ const SideBar = () => {
           // style={{ transform: "rotate(180deg)" }}
           onClick={() => setOpen(!open)}
         />
-        <div
-          className="flex gap-x-4 items-center"
-          style={{
-            height: "30px",
-          }}
-        >
+        <div className="flex gap-x-4 items-center h-8">
           <LeftOutlined
             className={`text-white cursor-pointer duration-500 
             ${!open ? "rotate-180" : "rotate-[360]"}`}
@@ -51,7 +46,7 @@ const SideBar = () => {
           />
           {/* <Avatar size="large" icon={<UserOutlined />} /> */}
           <h1
-            className={`text-white  origin-left font-medium text-xl Logo-title`}
+            className={`text-white  origin-left font-medium text-xl mb-1 w-10/12 h-8 truncate`}
             style={{ display: !open && "none" }}
           >
             Rogan UI Challenge

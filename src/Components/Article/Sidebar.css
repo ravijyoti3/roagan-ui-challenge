@@ -82,15 +82,15 @@
   padding-top: 26px;
 }
 
-
+/* Increase icon size for clear vision */
 .anticon svg {
   height: 1.1rem !important;
   width: 1.1rem !important;
 }
 
-.ant-avatar {
+/* .ant-avatar { For Future Avatar Task
   background-color: grey;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */

@@ -6,11 +6,7 @@ import { PlusCircleOutlined } from "@ant-design/icons";
 import ArticleSection from "./ArticleSection";
 
 const index = () => {
-  return (
-    <>
-      <ArticleSection />
-    </>
-  );
+  return <ArticleSection />;
 };
 
 export default index;

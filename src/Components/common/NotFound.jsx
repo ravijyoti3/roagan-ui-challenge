@@ -3,7 +3,7 @@ import React from "react";
 
 const NotFound = () => {
   return (
-    <div className="h-100 w-100 flex justify-center items-center">
+    <div className="h-full w-full flex justify-center items-center">
       <Result
         status="404"
         title="404"
@@ -12,7 +12,7 @@ const NotFound = () => {
           <button
             onClick={() => {}}
             type="primary"
-            className="bg-dark-purple btn"
+            className="bg-dark-purple py-2 px-4 rounded-lg bg-blue-900 text-white hover:bg-blue-800"
           >
             Return To Home
           </button>
